@@ -136,3 +136,19 @@ addy[2].textContent = siteContent["contact"]["email"];
 const foot = document.querySelector("footer p");
 
 foot.textContent = siteContent["footer"]["copyright"]
+
+
+/* Addind new content to nav */
+//Link One
+const navLinkOne = document.createElement("a");
+navLinkOne.textContent = "LinkOne";
+
+const addedNav = document.querySelector('nav');
+addedNav.append(navLinkOne);
+
+//Link Two
+const navLinkTwo = document.createElement("a");
+navLinkTwo.textContent = "LinkTwo";
+
+const addedNavTwo =  document.querySelector("nav");
+addedNavTwo.prepend(navLinkTwo)
